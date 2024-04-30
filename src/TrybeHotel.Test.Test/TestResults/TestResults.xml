@@ -1,0 +1,173 @@
+<assemblies timestamp="06/22/2023 18:24:59">
+  <assembly name="/Users/danilosilva/Documents/Trybe/C#/Eletiva/Projetos-oficiais/csharp-0x-projeto-trybe-hotel/src/TrybeHotel.Test.Test/bin/Debug/net6.0/TrybeHotel.test.test.dll" run-date="2023-06-22" run-time="18:24:59" total="30" passed="30" failed="0" skipped="0" time="12.286" errors="0">
+    <errors />
+    <collection total="1" passed="1" failed="0" skipped="0" name="Test collection for trybe_hotel.Test.Test.CoverageTest" time="10.495">
+      <test name="trybe_hotel.Test.Test.CoverageTest.Testes" type="trybe_hotel.Test.Test.CoverageTest" method="Testes" time="10.4951792" result="Pass">
+        <traits>
+          <trait name="Category" value="9. Desenvolva testes que cubram no mínimo 40% de linhas" />
+        </traits>
+      </test>
+    </collection>
+    <collection total="1" passed="1" failed="0" skipped="0" name="Test collection for trybe_hotel.Test.Test.DeleteRoomTest" time="1.104">
+      <test name="Será validado que a resposta será um status http 204(url: &quot;/room/1&quot;)" type="trybe_hotel.Test.Test.DeleteRoomTest" method="TestRoomController" time="1.1041396" result="Pass">
+        <traits>
+          <trait name="Category" value="8. Desenvolva o endpoint DELETE /room" />
+        </traits>
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for trybe_hotel.Test.Test.GetCityTest" time="1.686">
+      <test name="Será validado que é possível listar todos as cidades(url: &quot;/city&quot;)" type="trybe_hotel.Test.Test.GetCityTest" method="TestCityControllerResponse" time="1.1053747" result="Pass">
+        <traits>
+          <trait name="Category" value="2. Desenvolva o endpoint GET /city" />
+        </traits>
+      </test>
+      <test name="Será validado que a resposta será um status http 200(url: &quot;/city&quot;)" type="trybe_hotel.Test.Test.GetCityTest" method="TestCityController" time="0.5810948" result="Pass">
+        <traits>
+          <trait name="Category" value="2. Desenvolva o endpoint GET /city" />
+        </traits>
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for trybe_hotel.Test.Test.GetHotelTest" time="1.699">
+      <test name="Será validado que é possível listar todos os hotéis(url: &quot;/hotel&quot;)" type="trybe_hotel.Test.Test.GetHotelTest" method="TestHotelControllerResponse" time="1.1056645" result="Pass">
+        <traits>
+          <trait name="Category" value="4. Desenvolva o endpoint GET /hotel" />
+        </traits>
+      </test>
+      <test name="Será validado que a resposta será um status http 200(url: &quot;/hotel&quot;)" type="trybe_hotel.Test.Test.GetHotelTest" method="TestHotelController" time="0.5931049" result="Pass">
+        <traits>
+          <trait name="Category" value="4. Desenvolva o endpoint GET /hotel" />
+        </traits>
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for trybe_hotel.Test.Test.GetRoomTest" time="1.686">
+      <test name="Será validado que é possível listar todos os quartos de um hotel(url: &quot;/room/1&quot;)" type="trybe_hotel.Test.Test.GetRoomTest" method="TestRoomControllerResponse" time="1.1058994" result="Pass">
+        <traits>
+          <trait name="Category" value="6. Desenvolva o endpoint GET /room" />
+        </traits>
+      </test>
+      <test name="Será validado que a resposta será um status http 200(url: &quot;/room/1&quot;)" type="trybe_hotel.Test.Test.GetRoomTest" method="TestRoomController" time="0.5805622" result="Pass">
+        <traits>
+          <trait name="Category" value="6. Desenvolva o endpoint GET /room" />
+        </traits>
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for trybe_hotel.Test.Test.PostCityTest" time="1.166">
+      <test name="Será validado que é possível retornar a cidade criada(url: &quot;/city&quot;)" type="trybe_hotel.Test.Test.PostCityTest" method="TestCityControllerPostResponse" time="0.5373614" result="Pass">
+        <traits>
+          <trait name="Category" value="3. Desenvolva o endpoint POST /city" />
+        </traits>
+      </test>
+      <test name="Será validado que a resposta será um status http 201(url: &quot;/city&quot;)" type="trybe_hotel.Test.Test.PostCityTest" method="TestCityControllerPost" time="0.6286410" result="Pass">
+        <traits>
+          <trait name="Category" value="3. Desenvolva o endpoint POST /city" />
+        </traits>
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for trybe_hotel.Test.Test.PostHotelTest" time="1.685">
+      <test name="Será validado que a resposta será um status http 201(url: &quot;/hotel&quot;)" type="trybe_hotel.Test.Test.PostHotelTest" method="TestCityControllerPost" time="1.0957279" result="Pass">
+        <traits>
+          <trait name="Category" value="5. Desenvolva o endpoint POST /hotel" />
+        </traits>
+      </test>
+      <test name="Será validado que é possível retornar a cidade criada(url: &quot;/hotel&quot;)" type="trybe_hotel.Test.Test.PostHotelTest" method="TestCityControllerPostResponse" time="0.5894557" result="Pass">
+        <traits>
+          <trait name="Category" value="5. Desenvolva o endpoint POST /hotel" />
+        </traits>
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for trybe_hotel.Test.Test.PostRoomTest" time="1.684">
+      <test name="Será validado que é possível retornar o quarto criado(url: &quot;/room&quot;)" type="trybe_hotel.Test.Test.PostRoomTest" method="TestCityControllerPostResponse" time="1.1054252" result="Pass">
+        <traits>
+          <trait name="Category" value="7. Desenvolva o endpoint POST /room" />
+        </traits>
+      </test>
+      <test name="Será validado que a resposta será um status http 201(url: &quot;/room&quot;)" type="trybe_hotel.Test.Test.PostRoomTest" method="TestCityControllerPost" time="0.5782575" result="Pass">
+        <traits>
+          <trait name="Category" value="7. Desenvolva o endpoint POST /room" />
+        </traits>
+      </test>
+    </collection>
+    <collection total="16" passed="16" failed="0" skipped="0" name="Test collection for trybe_hotel.Test.Test.TestModels" time="0.436">
+      <test name="City deve conter as propriedades e tipos corretos(propertyName: &quot;CityId&quot;, propertyType: typeof(int))" type="trybe_hotel.Test.Test.TestModels" method="CityShouldContainProperties" time="0.0063825" result="Pass">
+        <traits>
+          <trait name="TrybeHotel" value="1. Implemente as models da aplicação" />
+        </traits>
+      </test>
+      <test name="City deve conter as propriedades e tipos corretos(propertyName: &quot;Hotels&quot;, propertyType: typeof(System.Collections.Generic.IEnumerable&lt;TrybeHotel.Models.Hotel&gt;))" type="trybe_hotel.Test.Test.TestModels" method="CityShouldContainProperties" time="0.0001507" result="Pass">
+        <traits>
+          <trait name="TrybeHotel" value="1. Implemente as models da aplicação" />
+        </traits>
+      </test>
+      <test name="City deve conter as propriedades e tipos corretos(propertyName: &quot;Name&quot;, propertyType: typeof(string))" type="trybe_hotel.Test.Test.TestModels" method="CityShouldContainProperties" time="0.0000110" result="Pass">
+        <traits>
+          <trait name="TrybeHotel" value="1. Implemente as models da aplicação" />
+        </traits>
+      </test>
+      <test name="Hotel deve conter as propriedades e tipos corretos(propertyName: &quot;CityId&quot;, propertyType: typeof(int))" type="trybe_hotel.Test.Test.TestModels" method="HotelShouldContainProperties" time="0.0001585" result="Pass">
+        <traits>
+          <trait name="TrybeHotel" value="1. Implemente as models da aplicação" />
+        </traits>
+      </test>
+      <test name="Hotel deve conter as propriedades e tipos corretos(propertyName: &quot;Rooms&quot;, propertyType: typeof(System.Collections.Generic.IEnumerable&lt;TrybeHotel.Models.Room&gt;))" type="trybe_hotel.Test.Test.TestModels" method="HotelShouldContainProperties" time="0.0000245" result="Pass">
+        <traits>
+          <trait name="TrybeHotel" value="1. Implemente as models da aplicação" />
+        </traits>
+      </test>
+      <test name="Hotel deve conter as propriedades e tipos corretos(propertyName: &quot;HotelId&quot;, propertyType: typeof(int))" type="trybe_hotel.Test.Test.TestModels" method="HotelShouldContainProperties" time="0.0000431" result="Pass">
+        <traits>
+          <trait name="TrybeHotel" value="1. Implemente as models da aplicação" />
+        </traits>
+      </test>
+      <test name="Hotel deve conter as propriedades e tipos corretos(propertyName: &quot;Address&quot;, propertyType: typeof(string))" type="trybe_hotel.Test.Test.TestModels" method="HotelShouldContainProperties" time="0.0000157" result="Pass">
+        <traits>
+          <trait name="TrybeHotel" value="1. Implemente as models da aplicação" />
+        </traits>
+      </test>
+      <test name="Hotel deve conter as propriedades e tipos corretos(propertyName: &quot;Name&quot;, propertyType: typeof(string))" type="trybe_hotel.Test.Test.TestModels" method="HotelShouldContainProperties" time="0.0000087" result="Pass">
+        <traits>
+          <trait name="TrybeHotel" value="1. Implemente as models da aplicação" />
+        </traits>
+      </test>
+      <test name="Room deve conter as propriedades e tipos corretos(propertyName: &quot;Capacity&quot;, propertyType: typeof(int))" type="trybe_hotel.Test.Test.TestModels" method="RoomShouldContainProperties" time="0.0000950" result="Pass">
+        <traits>
+          <trait name="TrybeHotel" value="1. Implemente as models da aplicação" />
+        </traits>
+      </test>
+      <test name="Room deve conter as propriedades e tipos corretos(propertyName: &quot;RoomId&quot;, propertyType: typeof(int))" type="trybe_hotel.Test.Test.TestModels" method="RoomShouldContainProperties" time="0.0000080" result="Pass">
+        <traits>
+          <trait name="TrybeHotel" value="1. Implemente as models da aplicação" />
+        </traits>
+      </test>
+      <test name="Room deve conter as propriedades e tipos corretos(propertyName: &quot;Name&quot;, propertyType: typeof(string))" type="trybe_hotel.Test.Test.TestModels" method="RoomShouldContainProperties" time="0.0000092" result="Pass">
+        <traits>
+          <trait name="TrybeHotel" value="1. Implemente as models da aplicação" />
+        </traits>
+      </test>
+      <test name="Room deve conter as propriedades e tipos corretos(propertyName: &quot;HotelId&quot;, propertyType: typeof(int))" type="trybe_hotel.Test.Test.TestModels" method="RoomShouldContainProperties" time="0.0000118" result="Pass">
+        <traits>
+          <trait name="TrybeHotel" value="1. Implemente as models da aplicação" />
+        </traits>
+      </test>
+      <test name="Room deve conter as propriedades e tipos corretos(propertyName: &quot;Image&quot;, propertyType: typeof(string))" type="trybe_hotel.Test.Test.TestModels" method="RoomShouldContainProperties" time="0.0000077" result="Pass">
+        <traits>
+          <trait name="TrybeHotel" value="1. Implemente as models da aplicação" />
+        </traits>
+      </test>
+      <test name="Room deve conter chave primária(keyName: &quot;RoomId&quot;)" type="trybe_hotel.Test.Test.TestModels" method="RoomShouldContainProperPrimaryKey" time="0.4051953" result="Pass">
+        <traits>
+          <trait name="TrybeHotel" value="1. Implemente as models da aplicação" />
+        </traits>
+      </test>
+      <test name="Hotel deve conter chave primária(keyName: &quot;HotelId&quot;)" type="trybe_hotel.Test.Test.TestModels" method="HotelShouldContainProperPrimaryKey" time="0.0235459" result="Pass">
+        <traits>
+          <trait name="TrybeHotel" value="1. Implemente as models da aplicação" />
+        </traits>
+      </test>
+      <test name="City deve conter chave primária(keyName: &quot;CityId&quot;)" type="trybe_hotel.Test.Test.TestModels" method="CityShouldContainProperPrimaryKey" time="0.0003510" result="Pass">
+        <traits>
+          <trait name="TrybeHotel" value="1. Implemente as models da aplicação" />
+        </traits>
+      </test>
+    </collection>
+  </assembly>
+</assemblies>
