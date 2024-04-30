@@ -15,9 +15,9 @@ using System.IO;
 
 public class IntegrationTest: IClassFixture<WebApplicationFactory<Program>>
 {
-     public HttpClient _clientTest;
+    public HttpClient _clientTest;
 
-     public IntegrationTest(WebApplicationFactory<Program> factory)
+    public IntegrationTest(WebApplicationFactory<Program> factory)
     {
         //_factory = factory;
         _clientTest = factory.WithWebHostBuilder(builder => {
@@ -72,7 +72,7 @@ public class IntegrationTest: IClassFixture<WebApplicationFactory<Program>>
             });
         }).CreateClient();
     }
- 
+
     [Trait("Category", "Meus testes")]
     [Theory(DisplayName = "Executando meus testes")]
     [InlineData("/city")]
@@ -81,7 +81,6 @@ public class IntegrationTest: IClassFixture<WebApplicationFactory<Program>>
         var response = await _clientTest.GetAsync(url);
         Assert.Equal(System.Net.HttpStatusCode.OK, response?.StatusCode);
     }
-   
     
     
 }
