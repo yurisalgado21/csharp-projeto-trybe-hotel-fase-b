@@ -21,12 +21,47 @@ namespace TrybeHotel.Repository
         }
         public UserDto Add(UserDtoInsert user)
         {
-            throw new NotImplementedException(); 
+            try
+            {
+                var newUser = new User {
+                    Name = user.Name,
+                    Email = user.Email,
+                    Password = user.Password,
+                    UserType = "client"
+                };
+
+                _context.Users.Add(newUser);
+                _context.SaveChanges();
+
+                var foundUser = _context.Users.First(u => u.Email == newUser.Email && u.Password == newUser.Password);
+
+                return new UserDto {
+                    userId = foundUser.UserId,
+                    Name = foundUser.Name,
+                    Email = foundUser.Email,
+                    userType = foundUser.UserType
+                };
+            }
+            catch (Exception err)
+            {
+                throw new Exception(err.Message);
+            }
         }
 
         public UserDto GetUserByEmail(string userEmail)
         {
-            throw new NotImplementedException();
+            var foundUser = _context.Users.FirstOrDefault(u => u.Email == userEmail);
+            if (foundUser == null)
+            {
+                return null!;
+            }
+
+            return new UserDto{
+                userId = foundUser.UserId,
+                Name = foundUser.Name,
+                Email = foundUser.Email,
+                userType = "client"
+            };
         }
 
         public IEnumerable<UserDto> GetUsers()
