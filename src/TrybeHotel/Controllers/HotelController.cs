@@ -24,6 +24,8 @@ namespace TrybeHotel.Controllers
         }
 
         [HttpPost]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [Authorize(Policy = "Admin")]
         public IActionResult PostHotel([FromBody] Hotel hotel){
             try
             {
@@ -35,7 +37,5 @@ namespace TrybeHotel.Controllers
                 throw new Exception(err.Message);
             }
         }
-
-
     }
 }

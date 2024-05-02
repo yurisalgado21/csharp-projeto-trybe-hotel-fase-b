@@ -9,7 +9,7 @@ using System.Security.Claims;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Add services to the container
 
 builder.Services.AddControllers();
 builder.Services.AddDbContext<TrybeHotelContext>();
@@ -54,7 +54,9 @@ builder.Services.AddAuthentication(options =>
 
 builder.Services.AddAuthorization(options =>
 {
-    
+    options.AddPolicy("Admin", policy => policy.RequireClaim(ClaimTypes.Email)); 
+    options.AddPolicy("Admin", policy => policy.RequireClaim(ClaimTypes.Role, "admin"));
+    options.AddPolicy("Client", policy => policy.RequireClaim(ClaimTypes.Email));
 });
 
 var app = builder.Build();
