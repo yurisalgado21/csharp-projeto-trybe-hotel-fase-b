@@ -31,6 +31,8 @@ namespace TrybeHotel.Controllers
         }
 
         [HttpPost]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [Authorize(Policy = "Admin")]
         public IActionResult PostRoom([FromBody] Room room){
             try
             {
