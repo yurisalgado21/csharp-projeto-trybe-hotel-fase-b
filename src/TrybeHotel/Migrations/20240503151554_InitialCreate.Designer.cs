@@ -12,7 +12,7 @@ using TrybeHotel.Repository;
 namespace TrybeHotel.Migrations
 {
     [DbContext(typeof(TrybeHotelContext))]
-    [Migration("20240430231143_InitialCreate")]
+    [Migration("20240503151554_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />

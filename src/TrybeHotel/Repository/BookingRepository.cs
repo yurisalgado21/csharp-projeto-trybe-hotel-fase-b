@@ -1,5 +1,6 @@
 using TrybeHotel.Models;
 using TrybeHotel.Dto;
+using Microsoft.AspNetCore.Mvc;
 
 namespace TrybeHotel.Repository
 {
@@ -53,14 +54,50 @@ namespace TrybeHotel.Repository
 
         public BookingResponse GetBooking(int bookingId, string email)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var user = _context.Users.FirstOrDefault(u => u.Email == email);
+
+
+                var booking = _context.Bookings.First(b => b.BookingId == bookingId);
+                if (user!.UserId != booking.UserId)
+                {
+                    return null!;
+                }
+                var room = _context.Rooms.First(r => r.RoomId == booking.RoomId);
+                var hotel = _context.Hotels.First(h => h.HotelId == room.HotelId);
+
+                return new BookingResponse {
+                    bookingId = booking.BookingId,
+                    checkIn = booking.CheckIn,
+                    checkOut = booking.CheckOut,
+                    guestQuant = booking.GuestQuant,
+                    room = new RoomDto {
+                        roomId = room.RoomId,
+                        name = room.Name,
+                        capacity = room.Capacity,
+                        image = room.Image,
+                        hotel = new HotelDto {
+                            hotelId = hotel.HotelId,
+                            name = hotel.Name,
+                            address = hotel.Address,
+                            cityId = hotel.CityId,
+                            cityName = _context.Cities.First(c => c.CityId == hotel.CityId).Name
+                        }
+                    }
+                };
+            }
+            catch (Exception err)
+            {
+                throw new Exception(err.Message);
+            }
         }
 
         public Room GetRoomById(int RoomId)
         {
-            throw new NotImplementedException();
+            var room = _context.Rooms.First(r => r.RoomId == RoomId);
+            return room;
         }
-
     }
 
 }
