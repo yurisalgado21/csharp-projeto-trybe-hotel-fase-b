@@ -77,8 +77,12 @@ namespace TrybeHotel.Repository
 
         public IEnumerable<UserDto> GetUsers()
         {
-           throw new NotImplementedException();
+            return _context.Users.Select(u => new UserDto {
+                userId = u.UserId,
+                Name = u.Name,
+                Email = u.Email,
+                userType = u.UserType
+            }).ToList();
         }
-
     }
 }
